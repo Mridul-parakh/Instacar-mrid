@@ -89,13 +89,13 @@ router.post('/carSearch',(req,res)=>{
     let cost = 0
      cost = cost + (diffDayss*250)
     if(req.body.way==='Multi City'){
-         cost = cost + (600*parseInt(req.body.driverPack))
+         cost = cost + (600*parseInt(req.body.driverpackage))
     }
     else if(req.body.way==='Round Trip'){
-         cost = cost + (600 * parseInt(req.body.driverPack))
+         cost = cost + (600 * parseInt(req.body.driverpackage))
     }
     else if(req.body.way==='One Way'){
-        cost = cost + (300 * parseInt(req.body.driverPack))
+        cost = cost + (300 * parseInt(req.body.driverpackage))
     }
     res.json({cost:cost+1500})
 })
