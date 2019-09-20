@@ -71,7 +71,7 @@ router.post('/validCheck',(req,res)=>{
     
     c=c.toLowerCase();
     c=c.trim();
-    if(c=="banglore"){
+    if(c=="bangalore"){
         res.status(404).json({to:"To cannot be banglore "})
        
     }
